@@ -1,0 +1,118 @@
+body {
+	background: #323232;
+	font-family: 'Comic Sans MS';
+	font-size: 76%;
+}
+
+/* Styling the widget */
+#widget {
+	/* Width is adjustable, you can increase/decrease
+	it and the menu will resize fine when we are done! */
+	width: 200px;
+	margin: 50px auto;
+	
+	box-shadow: 0 0 5px #171717;
+}
+
+/* heading */
+
+h1 {
+	background: linear-gradient(#626a75, #545c67);
+	color: #fff;
+	padding: 15px;
+	margin: 0;
+	border: 1px solid #1e222b;
+	/* fixing the double border */
+	border-bottom: 0;
+	
+	font-family: Verdana;
+	font-size: 1.5em;
+}
+
+/* Lets give "Deck" a different color */
+h1 .highlight {
+	color: #ababab;
+}
+
+/* Onto the Menu (Listing) Now! */
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px;
+	
+	background: linear-gradient(#628297, #4f6b81);
+	
+	border: 1px solid #1e222b;
+	border-bottom: 0;
+	/* little box shadow too! */
+	box-shadow: inset 0px 1px 1px #8b9db3;
+}
+
+/* time for some hover effects for the menu links */
+.menu a:hover {
+	background: linear-gradient(#3b3f48, #3c434d);
+	box-shadow: inset 0px 1px 1px #475059;
+}
+
+/*
+we'll also show an arrow on hover. we can use
+an image for this task, or make a css icon too.
+But i am just going to keep it simple and use
+a unicode character.
+*/
+
+.menu a:hover::after {
+	content: '❱';
+	float: right;
+	color: gray;
+}
+
+/* different bg color on the active state
+will be nice too! */
+.menu a:active {
+	background: linear-gradient(#2b442d, #2d4630);
+}
+
+
+/*
+things have come along nicely!
+finally, we have some controls (you can call
+them something else), that we'll style.
+*/
+
+.controls {
+	list-style: none;
+	padding: 0; margin: 0;
+	
+	border: 1px solid #1e222b;
+	border-top: 0;
+	display: table;
+	width: 100%;
+}
+
+.controls li {
+	display: table-cell;
+	height: 50px;
+	
+	background: linear-gradient(#303D50 0%, #293542 50%, #1F2935 50%, #182028 100%);
+}
+
+.controls .call {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.controls .call a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+}
